@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="./static/js/script.js" defer></script>
 
 </head>
-<body>
-    <!--banner-->
+<body onload="addYear()">
+     <!--banner-->
     <div class="banner">
         <div class="banner-text">
             <h2>MonoMuse Presents...</h2>
@@ -41,6 +42,7 @@
         </p>
         <a class="cta" href="views/tickets.html">Buy Tickets</a>
     </div>
-    <footer class="footer">&copy; 2026 MonoMuse. All rights reserved.</footer>
+    <footer class="footer">&copy; <p id="copyYear"></p> MonoMuse. All rights reserved.
+    </footer>
 </body>
 </html>
