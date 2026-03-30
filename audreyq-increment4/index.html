@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Audrey Qian">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="./static/js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
+<body onload="addYear()">
+    <div class="container home">
+        <!--banner-->
+        <header class="banner">
+            <div class="banner-text">
+                <h4>MonoMuse Presents...</h4>
+                <h1>Gregory Crewdson</h1>
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="views/explore.html">Explore</a>
+                <a href="views/exhibitions.html">Exhibitions</a>
+                <a href="views/buytickets.html">Buy Tickets</a>
+            </nav>
+        </header>
+        <main class ="main">
+            <h2>Welcome to MonoMuse</h2>
+            <p>Gregory Crewdson (born 1962) is a renowned American fine-art photographer known for elaborately staged, cinematic, and 
+                often unsettling images of small-town American life. His work, which feels like a, "still from a movie," explores 
+                psychological tension, loneliness, and the uncanny through meticulous, large-scale productions using full film crews, 
+                detailed sets, and dramatic lighting. 
+            </p>
+            <a class="cta" href="views/tickets.html">Buy Tickets</a>
+            <p id="shortIntro">Born in Brooklyn in 1962, Crewdson received a B.A. from the State University of New York at Purchase 
+                in 1985 and an M.F.A. in photography at Yale in 1988. He has exhibited widely in the United States and Europe and is 
+                represented by Gagosian Gallery in New York and White Cube in London.</p>
+            <a class="cta" id="readMore">Read More</a>
+            <p id="longerParagraph">Crewdson's work has been included in many public collections, most notably the Museum of Modern Art, the Metropolitan 
+            Museum of Art, the Whitney Museum of American Art, the Brooklyn Museum, the Los Angeles County Museum, and the San 
+            Francisco Museum of Modern Art. A retrospective of his work from 1985–2005, was shown at major museums around Europe from
+                2005–08. Another exhibition of his work opened at the Kulturhuset Museum, Stockholm, in February 2011, followed by 
+                Sorte Diamant, Copenhagen and c/o Berlin, among others. Crewdson has received numerous awards including the Skowhegan 
+                Medal for Photography, the National Endowment for the Arts Visual Artists Fellowship and the Aaron Siskind Fellowship. 
+                Crewdson is Professor Adjunct in Graduate Photography at the Yale University School of Art and lives and works in New York.</p>
+            <a class="cta" id="readLess">Read Less</a>
+        </main>
+        <img class="main_img" src="../static/images/gregory_crewdson.png" alt="Gregory Crewdson Photo"> 
+        <footer class="footer"><p> &copy; &nbsp; </p><p id="copyYear"></p><p>&nbsp; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

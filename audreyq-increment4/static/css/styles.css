@@ -1,0 +1,299 @@
+
+:root {
+  --crimson: #890512;
+  --dark-navy: #11100c;
+  --denim-blue: #152a3d;
+  --dusty-pink: #dcbbc3;
+  --cream-beige: #f3f0e3; 
+}
+
+* {
+  color:  var(--denim-blue);
+  font-family: "Open Sans", "Montserrat", "Lexend";
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+a.buyTicket{
+  text-decoration: underline;
+  color: #2a4e70;
+  font-weight: bold;
+}
+
+a.cta {
+  background-color: var(--dusty-pink);
+  border: 2px solid var(--crimson);
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2a4e70;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 5% 0%;
+}
+
+body{
+  background-color: var(--cream-beige);
+  width: 100%;
+  margin: auto;
+}
+
+body > div.container.home{
+  display: grid;
+  grid-template-areas:
+    'banner banner'
+    'main main-img'
+    'footer footer';
+}
+
+.container-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark-navy);
+}
+
+.container-image{
+  width: 40%;
+}
+
+footer {
+  background-image: url("../images/footer_background.png");
+  background-size: cover;
+  border-top: 1px solid rgba(245,245,247,.12);
+  padding: 18px 16px;
+  color: var(--dark-navy);;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+form input {
+  margin: 6px 0px;
+}
+
+header.banner{
+  background-image: url("../images/banner_background.png");
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: calc(100vw / 1.9);
+  height: auto;
+}
+
+header div.banner-text{
+  padding: 5%;
+  text-align: left;
+}
+
+.banner{
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 7px solid var(--crimson);
+}
+
+.banner-text *{
+  font-weight: bold;
+  font-family: "Lexend";
+  color: var(--cream-beige);
+  margin: 0%;
+}
+
+.container-text *{
+  color: var(--denim-blue);
+}
+
+form{
+    margin-top: 5%;
+}
+
+form p{
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+form input{
+  margin-bottom: 10px;
+}
+
+#formHeading{
+  text-align: left;
+  margin: 5% 0% 2% 0%;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+h2{
+  color: var(--denim-blue);
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.75em;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h2, h3{
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#logo {
+  width: 18%;
+  display: block;
+}
+
+/*Make "Read Less" and Longer Paragraph on homepage hidden by default*/
+#longerParagraph, #readLess {
+  display: none;
+}
+
+main{
+  padding: 5%;
+  margin: 5% 10%;
+}
+
+.main{
+  grid-area: main;
+}
+
+.main_img {
+  grid-area: main-img;
+  max-width: 60%;
+  display: flex;
+  align-self: center;
+  align-items: end;
+  margin: 5%;
+}
+
+.med-img {
+  max-width: 60%;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-navy);
+  font-weight: bold;
+  padding: 8px 10px;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  background-color: var(--cream-beige);
+  color: var(--crimson);
+  }
+
+.nav-bar{
+  grid-area: nav-bar;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: flex-end;
+  margin: 2% 0%;
+}
+
+.active {
+  color: var(--crimson);    
+}
+
+p{
+  color: var(--denim-blue);
+  margin-bottom: 7%;
+  font-family: "Open Sans";
+}
+
+p#shortIntro{
+  margin-top: 10%;
+}
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  padding: 3%;
+}
+
+table *{
+  padding: 5px;
+  border: 0px;
+}
+
+td{
+  border: 2px solid var(--crimson);
+}
+
+
+table.calendar{
+   background-color: #f2f2f2;
+}
+
+.tableHeading{
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 0px;
+}
+
+td.container-image img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 5%;
+}
+
+th {
+  background-color: var(--dusty-pink);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: fit-content;
+}
+
+#ticketForm, #formHeading {
+  display: none;
+}
+
+label{
+  font-weight: bold;
+  color: var(--denim-blue);
+  margin-top: 10px;
+}
+
+input{
+  border: var(--crimson) solid 2px;
+  border-radius: 5px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+input#submitButton{
+  background-color: var(--dusty-pink);
+  border: var(--crimson) solid 2px;
+  font-size: 1em;
+  min-height: 40px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+
+#ticketForm *{
+  margin-left: 5%;
+}
+
+tr.alternate:nth-child(even) {
+  background-color: #f2f2f2;
+}
