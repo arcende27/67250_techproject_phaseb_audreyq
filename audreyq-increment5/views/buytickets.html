@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Audrey Qian">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="../static/js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+    
+        <!--banner-->
+        <header class="banner">
+            <div class="banner-text">
+            <h1>Buy Tickets</h1>
+            </div>
+            <!--nav bar-->
+            <nav class="nav-bar">
+                <button class="navMenu">
+                    ☰
+                </button>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="./explore.html">Explore</a>
+                    <a href="./exhibitions.html">Exhibitions</a>
+                    <a href="./buytickets.html">Buy Tickets</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <h3>Ticket Information</h3>
+            <table class="bordered">
+                <tr class="alternate">
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price ($)</th>
+                </tr>
+                <tr class="alternate">
+                    <td>Adult</td>
+                    <td>General admission for ages 18 and over. Under 18 free of charge</td>
+                    <td>$18</td>
+                </tr>
+                <tr class="alternate">
+                    <td>Student</td>
+                    <td>Student ID required</td>
+                    <td>$10</td>
+                </tr>
+                <tr class="alternate">
+                    <td>Member</td>
+                    <td>Member ID required</td>
+                    <td>$15</td>
+                </tr>
+            </table>
+            <!--available dates table-->
+            <h3>Available Ticket Dates</h3>
+            <table class="calendar bordered" id="march">
+                <thead>
+                <h4 class="tableHeading">March 2026</h4>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Week 1 -->
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td>1<br><a class="buyTicket">Buy Now</a></td>
+                    <td>2<br><a class="buyTicket">Buy Now</a></td>
+                    <td>3<br><a class="buyTicket">Buy Now</a></td>
+                </tr>
+                <!-- Week 2 -->
+                <tr>
+                    <td>4<br><a class="buyTicket">Buy Now</a></td>
+                    <td>5<br><a class="buyTicket">Buy Now</a></td>
+                    <td>6<br><a class="buyTicket">Buy Now</a></td>
+                    <td>7<br><a class="buyTicket">Buy Now</a></td>
+                    <td>8<br><a class="buyTicket">Buy Now</a></td>
+                    <td>9<br><a class="buyTicket">Buy Now</a></td>
+                    <td>10<br><a class="buyTicket">Buy Now</a></td>
+                </tr>
+                <!-- Week 3 -->
+                <tr>
+                    <td>11<br><a class="buyTicket">Buy Now</a></td>
+                    <td>12<br><a class="buyTicket">Buy Now</a></td>
+                    <td>13<br><a class="buyTicket">Buy Now</a></td>
+                    <td>14<br><a class="buyTicket">Buy Now</a></td>
+                    <td>15<br><a class="buyTicket">Buy Now</a></td>
+                    <td>16<br><a class="buyTicket">Buy Now</a></td>
+                    <td>17<br><a class="buyTicket">Buy Now</a></td>
+                </tr>
+                <!-- Week 4 -->
+                <tr>
+                    <td>18<br><a class="buyTicket">Buy Now</a></td>
+                    <td>19<br><a class="buyTicket">Buy Now</a></td>
+                    <td>20<br><a class="buyTicket">Buy Now</a></td>
+                    <td>21<br><a class="buyTicket">Buy Now</a></td>
+                    <td>22<br><a class="buyTicket">Buy Now</a></td>
+                    <td>23<br><a class="buyTicket">Buy Now</a></td>
+                    <td>24<br><a class="buyTicket">Buy Now</a></td>
+                </tr>
+                <!-- Week 5 -->
+                <tr>
+                    <td>25<br><a class="buyTicket">Buy Now</a></td>
+                    <td>26<br><a class="buyTicket">Buy Now</a></td>
+                    <td>27<br><a class="buyTicket">Buy Now</a></td>
+                    <td>28<br><a class="buyTicket">Buy Now</a></td>
+                    <td>29<br><a class="buyTicket">Buy Now</a></td>
+                    <td>30<br><a class="buyTicket">Buy Now</a></td>
+                    <td>31<br><a class="buyTicket">Buy Now</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!--purchase form-->
+            <h3 id="formHeading">Purchase Tickets</h3>
+            <form id="ticketForm">
+                <label for="name">Name (required):</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email (required):</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <label>Date of Visit Selected:</label><br>
+                <p id="visitDate" name="date"></p><br>
+                <label for="quantity">Ticket Quantity (required):</label><br>
+                <input type="text" id="quantity" name="quantity" required><br>
+                <input type="submit" id="submitButton" value="Submit">
+            </form>
+        </main>
+        <footer class="footer"><p> &copy; &nbsp; </p><p id="copyYear"></p><p>&nbsp; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

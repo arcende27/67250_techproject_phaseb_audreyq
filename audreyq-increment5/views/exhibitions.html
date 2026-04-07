@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Audrey Qian">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="../static/js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <!--banner-->
+        <header class="banner">
+            <div class="banner-text">
+            <h2>Exhibitions of</h2>
+            <h1>Gregory Crewdson</h1>
+            </div>
+            <!--nav bar-->
+            <nav class="nav-bar">
+                <button class="navMenu">
+                    ☰ 
+                </button>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="./explore.html">Explore</a>
+                    <a href="./exhibitions.html">Exhibitions</a>
+                    <a href="./buytickets.html">Buy Tickets</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container exhibitions">
+                <div class="grid-item">
+                    <div class="container-text">
+                        <h3>Eveningside (2021-2022)</h3>
+                        <p>His most recent body of work, Eveningside is a series of black-and-white scenes of America in an 
+                            unidentifiable era,depicting solitary figures, often captured through a complex interplay of mirrors, 
+                            storefronts or places oftransition: bridges, porches, mini-markets and hardware stores.. The final 
+                            installment in a trilogy he has beenworking on since 2012, the twenty panoramic photographs are 
+                            characterized by their disturbing clarity and twilight mood. </p>
+                    </div>
+                    <div class="container-image">
+                        <img src="../static/images/eveningside.jpeg" alt="Eveningside Photo">
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="container-text">
+                        <h3>An Eclipse of the Moths (2018-2019)</h3>
+                        <p>These pictures are a meditation on brokenness, a search, a longing, and a yearning for meaning and 
+                            transcendence.The figures are surrounded by vast decaying industrial landscapes and the impinging
+                             nature―and there’s a certainunderlying suggestion of anxiety. But I hope in the end the theme of 
+                             nature persisting, and of figures seeking outlight, offers hope for renewal, even redemption.</p>
+                    </div>
+                    <div class="container-image">
+                        <img src="../static/images/an_eclipse_of_moths.png" alt="An Eclipse of Moths Photo">
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="container-text">
+                        <h3>Cathedral of the Pines (2013-2014)</h3>
+                        <p>Cathedral of the Pines is a series of 31 large-format photographs by American artist Gregory Crewdson,
+                             created between 2013 and 2014 in Becket, Massachusetts, and inspired by his childhood memories and a 
+                             personal period of difficulty. The images feature motionless figures in intimate, ambiguous scenes 
+                             set in both natural forest landscapes and domestic interiors, evoking the style of 19th-century 
+                             paintings while exploring themes of connection, isolation, and the search for meaning.</p>
+                    </div>
+                    <div class="container-image">
+                        <img src="../static/images/cathedral_of_the_pines.jpg" alt="Cathedral of the Pines Photo">
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="container-text">
+                        <h3>Beneath the Roses (2003-2008)</h3>
+                        <p>In these twenty “pointedly theatrical yet intensely real panoramic images, Crewdson explores the 
+                            recesses of the American psyche and the disturbing dramas at play within quotidian environments. 
+                            In Beneath the Roses, anonymous townscapes, forest clearings and broad, desolate streets are revealed 
+                            as sites of mystery and wonder; similarly, ostensibly banal interiors become the staging grounds for 
+                            strange human scenarios.” - gagosian.com</p>
+                    </div>
+                    <div class="container-image">
+                        <img src="../static/images/beneath_the_roses.jpg" alt="Beneath the Roses Photo">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"><p> &copy; &nbsp; </p><p id="copyYear"></p><p>&nbsp; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
